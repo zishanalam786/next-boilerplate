@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 interface ThreeDCardProps {
@@ -26,7 +27,7 @@ export function ThreeDCardDemo({ status, timestamp }: ThreeDCardProps) {
           Hover to inspect the live status of the API services.
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4 relative">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop"
             height="1000"
             width="1000"

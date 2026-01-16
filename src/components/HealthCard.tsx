@@ -1,5 +1,6 @@
 import { CometCard } from "@/components/ui/comet-card";
 import React from "react";
+import Image from "next/image";
 
 interface HealthCardProps {
   status: string;
@@ -17,9 +18,9 @@ export function HealthCard({ status, timestamp }: HealthCardProps) {
       >
         <div className="mx-2 flex-1" style={{ transformStyle: "preserve-3d", transform: "translateZ(20px)" }}>
           <div className="relative mt-2 aspect-[3/4] w-full">
-            <img
-              loading="lazy"
-              className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover contrast-75"
+            <Image
+              fill
+              className="rounded-[16px] bg-[#000000] object-cover contrast-75"
               alt="Health Status"
               src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?q=80&w=1287&auto=format&fit=crop"
               style={{
