@@ -47,7 +47,7 @@ src/
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/boilerplate.git
+    git clone https://github.com/zishanalam786/next-boilerplate.git
     cd boilerplate
     ```
 
