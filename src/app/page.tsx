@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function Home() {
-  const [health, setHealth] = useState<any>(null);
+  const [health, setHealth] = useState<{ status: string; timestamp: string } | null>(null);
 
   useEffect(() => {
     fetch("/api/health")

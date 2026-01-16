@@ -5,7 +5,7 @@ export class ApiResponse {
     return NextResponse.json({ success: true, message, data }, { status });
   }
 
-  static error(message = 'Error', status = 500, errors?: any) {
+  static error(message = 'Error', status = 500, errors?: unknown) {
     return NextResponse.json({ success: false, message, errors }, { status });
   }
 }
