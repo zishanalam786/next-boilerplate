@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.cardItemDefault {
+  @apply w-fit transition duration-200 ease-linear;
+}

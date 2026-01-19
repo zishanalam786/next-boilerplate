@@ -8,3 +8,4 @@ export class ErrorHandler {
     return ApiResponse.error(message, 500);
   }
 }
+//EOF

@@ -1,0 +1,10 @@
+@reference "tailwindcss";
+
+.cardBodyDefault {
+  @apply h-96 w-96;
+  transform-style: preserve-3d;
+}
+
+.cardBodyDefault * {
+  transform-style: preserve-3d;
+}

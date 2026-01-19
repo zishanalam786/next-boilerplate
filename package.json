@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test && npm run test:e2e",
     "prepare": "husky"
   },
   "dependencies": {

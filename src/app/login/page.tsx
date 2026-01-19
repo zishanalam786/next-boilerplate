@@ -1,9 +1,12 @@
 import React from 'react';
+import constants from '../data/constant.json';
 
-export default function LoginPage() {
+const LoginPage = () => {
   return (
     <div>
-      <h1>Login</h1>
+      <h1>{constants.Login}</h1>
     </div>
   );
 }
+export default LoginPage;
+//EOF

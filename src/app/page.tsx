@@ -1,23 +1,16 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import { ThreeDCardDemo } from "@/components/Card";
+import styles from './page.module.css';
 
-export default function Home() {
-  const [health, setHealth] = useState<{ status: string; timestamp: string } | null>(null);
-
-  useEffect(() => {
-    fetch("/api/health")
-      .then((res) => res.json())
-      .then((data) => setHealth(data.data)); // Adjusted to access .data property if ApiResponse wraps it
-  }, []);
-
+const Home=()=> {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-white text-white gap-8 p-4">
-      <h1 className="text-4xl font-bold text-black">Boilerplate Testing</h1>
+    <div className={styles.homeContainer}>
+      <h1 className={styles.homeTitle}>Boilerplate</h1>
+      <p className={styles.homeWelcome}>Welcome to boilerplate!</p>
       <ThreeDCardDemo 
-        status={health?.status || "LOADING"} 
-        timestamp={health?.timestamp || ""} 
       />
     </div>
   );
 }
+export default Home;
+//EOF

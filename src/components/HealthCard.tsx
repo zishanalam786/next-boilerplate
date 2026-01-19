@@ -1,6 +1,6 @@
 import { CometCard } from "@/components/ui/comet-card";
-import React from "react";
 import Image from "next/image";
+import Cards_image from "../../public/image_source.json";
 
 interface HealthCardProps {
   status: string;
@@ -22,7 +22,7 @@ export function HealthCard({ status, timestamp }: HealthCardProps) {
               fill
               className="rounded-[16px] bg-[#000000] object-cover contrast-75"
               alt="Health Status"
-              src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?q=80&w=1287&auto=format&fit=crop"
+              src={Cards_image.card_image_url}
               style={{
                 boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
                 opacity: 1,
@@ -41,3 +41,4 @@ export function HealthCard({ status, timestamp }: HealthCardProps) {
     </CometCard>
   );
 }
+//EOF

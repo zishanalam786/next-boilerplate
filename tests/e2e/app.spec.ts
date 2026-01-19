@@ -1,12 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-test('homepage has health check and user list', async ({ page }) => {
-  await page.goto('http://localhost:3000');
+test('homepage check', async ({ page }) => {
+  await page.goto('http://localhost:3001');
 
   await expect(page).toHaveTitle(/Boilerplate/);
 
-  await expect(page.getByRole('heading', { name: 'Boilerplate Testing' })).toBeVisible();
-  await expect(page.getByText('System Health Check')).toBeVisible();
-
-  await expect(page.getByText('UP')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Boilerplate' })).toBeVisible();
+  await expect(page.getByText('Welcome to boilerplate!')).toBeVisible();
 });
+//EOF
