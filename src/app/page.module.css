@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.homeContainer {
+  @apply min-h-screen w-full flex flex-col items-center justify-center bg-white text-white gap-8 p-4;
+}
+
+.homeTitle {
+  @apply text-4xl font-bold text-black;
+}
+
+.homeWelcome {
+  @apply text-base text-black;
+}

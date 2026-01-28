@@ -1,0 +1,5 @@
+@reference tailwindcss"; 
+
+.cardContainerDefault {
+  @apply flex items-center justify-center relative transition-all duration-200 ease-linear;
+}
