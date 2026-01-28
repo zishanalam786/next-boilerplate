@@ -16,4 +16,3 @@ mongoose
   });
 
 export default mongoose;
-//EOF

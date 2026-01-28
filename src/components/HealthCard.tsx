@@ -41,4 +41,3 @@ export function HealthCard({ status, timestamp }: HealthCardProps) {
     </CometCard>
   );
 }
-//EOF

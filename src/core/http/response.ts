@@ -9,4 +9,3 @@ export class ApiResponse {
     return NextResponse.json({ success: false, message, errors }, { status });
   }
 }
-//EOF

@@ -6,4 +6,3 @@ const cn = (...inputs: ClassValue[]) => {
 }
 
 export {cn}
-//EOF

@@ -8,4 +8,3 @@ test('homepage check', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Boilerplate' })).toBeVisible();
   await expect(page.getByText('Welcome to boilerplate!')).toBeVisible();
 });
-//EOF

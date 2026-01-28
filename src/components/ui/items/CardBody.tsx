@@ -15,4 +15,3 @@ export const CardBody = ({
     </div>
   );
 };
-//EOF

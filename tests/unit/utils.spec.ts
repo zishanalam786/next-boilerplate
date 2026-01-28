@@ -17,4 +17,3 @@ describe('cn', () => {
     expect(result).toBe('mt-4 font-bold');
   });
 });
-//EOF
